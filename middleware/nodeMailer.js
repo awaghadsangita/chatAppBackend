@@ -20,7 +20,7 @@ exports.nodemailSender = (forgetPasswordDataObject, url, urlToken, callback) => 
             // user: process.env.USERMAIL,
             // pass: process.env.USERPASSWORD
             user:'sangita.awaghad@gmail.com',
-            pass:'sangita.awaghad1987'
+            pass:'sangita.awaghad'
         }
     });
 
