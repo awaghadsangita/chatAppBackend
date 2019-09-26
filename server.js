@@ -19,7 +19,7 @@ var router = require('./routes/routes');
 var PORT = 3000;
 
 
-app.use(express.static('../Frontend')) //front end connection 
+app.use(express.static('../chatAppFrontend')) //front end connection 
 
 app.use(expressValidator());
 
