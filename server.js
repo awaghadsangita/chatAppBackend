@@ -48,12 +48,10 @@ io.on("connection",function(socket){
     socket.on('messageContainer',(message)=>{
         console.log(message.senderID)
         io.emit(String(message.receiverID),message);
-       
-        
+               
         let sendMsgCtrlPromise=chatController.sendMessageCtrl(message);
         sendMsgCtrlPromise.then(function(data){
             console.log("mydata ",message)
-            
         }).catch(function(err){
             return  err;
         });
